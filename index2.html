@@ -1,0 +1,62 @@
+!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котомемоизация</title>
+    <style>
+        body{
+            background-color: #000;
+           
+        }
+        .container{
+            margin: 0 auto;
+            padding: 30px;
+            max-width: 700px;
+        }
+        .meme-container{
+            position: relative;
+            color:#fff;
+            border: 10px solid #fff;
+            font-size: 20px;
+            text-align: center;
+            background-color:#555555;
+            margin: 30px;
+            padding: 20px;
+            font-family:monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .meme-container::after {
+            position: absolute;
+            content: "";
+            top: 15%;
+            left:50%;
+            width: 51%;
+            height: 240px;
+            display: block;
+            border: 3px solid #fff;
+            background:url(cat.jpg)no-repeat 50%/cover;
+            transform: translate(-50%, -15%);
+            
+        }
+
+        p{
+            padding-top: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="meme-container">
+           <p>Я готов!<br>
+           Гладь меня...мур!</p>
+        </div>
+    </div>
+    <a href="/index.html">Первый вариант</a>
+    
+</body>
+</html>
